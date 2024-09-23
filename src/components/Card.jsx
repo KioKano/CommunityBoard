@@ -15,7 +15,10 @@ import React from "react";
 const Card = () => {
     return (
         <div className="Card">
-            Testing the card component
+            <img src="https://via.placeholder.com/150" alt="Placeholder" />
+            <h3>Card Title</h3>
+            <p>This is a description inside the card.</p>
+            <button>View Menu</button>
         </div>
     )
 }
