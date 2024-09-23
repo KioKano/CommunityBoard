@@ -1,34 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/*
+  CodePath WEB102 | Intermediate Web Development
+  Unit 1
+  Project 1
 
-function App() {
-  const [count, setCount] = useState(0)
+  Name: Community Board
+  Author: Kionna Kanoyton
+  Date: 23 Sept. 2024 - Monday
 
+  Filename: App.jsx
+*/
+
+import './App.css';
+import Card from './components/Card'
+
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <h1>The Global Village</h1>
+      <h2>Festival Menus</h2>
+      <Card />
+    </div>
   )
 }
 
